@@ -46,6 +46,43 @@
 - Cursor：可读取 `AGENTS.md`，并支持 `.cursor/rules/*.mdc`
 - Windsurf：支持 `AGENTS.md` 作为项目级代理指令
 
+## 用 `skills` CLI 一键安装到多个 Agent（推荐）
+
+你可以直接使用 [vercel-labs/skills](https://github.com/vercel-labs/skills) 的 CLI，把这个 Skill 安装到多个 Agent。
+
+### 先列出仓库里的可安装 Skill
+
+```bash
+npx skills add oil-oil/modern-ui-ux-review --list
+```
+
+### 一次安装到多个 Agent
+
+```bash
+npx skills add oil-oil/modern-ui-ux-review \
+  -a codex \
+  -a claude-code \
+  -a cursor \
+  -a windsurf
+```
+
+### 全局安装（跨项目可用）
+
+```bash
+npx skills add oil-oil/modern-ui-ux-review \
+  -g \
+  -a codex \
+  -a claude-code \
+  -a cursor \
+  -a windsurf
+```
+
+说明：
+
+- `-a` 指定目标 Agent
+- `-g` 安装到用户目录（全局）
+- 如果你只想安装这个仓库内某个 Skill，可加 `--skill <name>`
+
 ## 安装与配置（Codex）
 
 ### 方式 A：通过 GitHub 安装（推荐）
@@ -78,6 +115,8 @@ scripts/install-skill-from-github.py --repo oil-oil/modern-ui-ux-review --path .
 ```
 
 安装后重启 Codex，使新 Skill 生效。
+
+> 如果你已经使用上面的 `npx skills add` 安装到 Codex，可以跳过本节。
 
 ## 让不同 AI 正确触发这个 Skill
 
@@ -141,6 +180,7 @@ scripts/install-skill-from-github.py --repo oil-oil/modern-ui-ux-review --path .
 
 ## 参考文档
 
+- skills CLI（跨 Agent 分发）：<https://github.com/vercel-labs/skills>
 - Claude Code 记忆机制（`CLAUDE.md`）：<https://docs.anthropic.com/en/docs/claude-code/memory>
 - Cursor 规则与 `AGENTS.md`：<https://docs.cursor.com/context/rules-for-ai>
 - Windsurf `AGENTS.md` 支持：<https://docs.windsurf.com/windsurf/cascade/memories>
