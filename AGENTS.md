@@ -1,4 +1,4 @@
-# modern-ui-ux-review Agent Instructions
+# oiloil-ui-ux-guide Agent Instructions
 
 This repository uses `AGENTS.md` as the shared instruction entry for multi-agent tools.
 

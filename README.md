@@ -1,4 +1,4 @@
-# modern-ui-ux-review
+# oiloil-ui-ux-guide
 
 一个面向现代简洁界面的 Codex Skill。  
 它把 UI/UX 建议变成可执行改法，重点解决两类问题：
@@ -53,13 +53,13 @@
 ### 先列出仓库里的可安装 Skill
 
 ```bash
-npx skills add oil-oil/modern-ui-ux-review --list
+npx skills add oil-oil/oiloil-ui-ux-guide --list
 ```
 
 ### 一次安装到多个 Agent
 
 ```bash
-npx skills add oil-oil/modern-ui-ux-review \
+npx skills add oil-oil/oiloil-ui-ux-guide \
   -a codex \
   -a claude-code \
   -a cursor \
@@ -69,7 +69,7 @@ npx skills add oil-oil/modern-ui-ux-review \
 ### 全局安装（跨项目可用）
 
 ```bash
-npx skills add oil-oil/modern-ui-ux-review \
+npx skills add oil-oil/oiloil-ui-ux-guide \
   -g \
   -a codex \
   -a claude-code \
@@ -90,7 +90,7 @@ npx skills add oil-oil/modern-ui-ux-review \
 在 Codex 环境执行：
 
 ```bash
-scripts/install-skill-from-github.py --repo oil-oil/modern-ui-ux-review --path .
+scripts/install-skill-from-github.py --repo oil-oil/oiloil-ui-ux-guide --path .
 ```
 
 ### 方式 B：手动安装
@@ -98,16 +98,16 @@ scripts/install-skill-from-github.py --repo oil-oil/modern-ui-ux-review --path .
 将仓库复制到：
 
 ```bash
-~/.codex/skills/modern-ui-ux-review
+~/.codex/skills/oiloil-ui-ux-guide
 ```
 
 建议目录结构：
 
 ```text
-~/.codex/skills/modern-ui-ux-review/
+~/.codex/skills/oiloil-ui-ux-guide/
   AGENTS.md
   CLAUDE.md
-  .cursor/rules/modern-ui-ux-review.mdc
+  .cursor/rules/oiloil-ui-ux-guide.mdc
   SKILL.md
   agents/openai.yaml
   references/
@@ -123,19 +123,19 @@ scripts/install-skill-from-github.py --repo oil-oil/modern-ui-ux-review --path .
 你可以用两种方式触发：
 
 1. 显式点名 Skill
-   - `请使用 $modern-ui-ux-review 评审这个设置页。`
+   - `请使用 $oiloil-ui-ux-guide 评审这个设置页。`
 2. 直接描述匹配任务
    - “帮我评审这个仪表盘，按 P0/P1/P2 给修复建议。”
    - “给我这个创建流程的简洁 UX 规则，重点防止提示堆叠。”
 
-建议在 Claude/Cursor/Windsurf 里也显式带上 `modern-ui-ux-review`，这样触发更稳定。
+建议在 Claude/Cursor/Windsurf 里也显式带上 `oiloil-ui-ux-guide`，这样触发更稳定。
 
 ## 推荐提示词模板
 
 ### 模板一：review（评审现有界面）
 
 ```text
-请使用 $modern-ui-ux-review 的 review 模式。
+请使用 $oiloil-ui-ux-guide 的 review 模式。
 背景：Web 管理后台，目标用户为首次完成配置的新用户。
 目标：提升首次配置完成率，减少误操作。
 请输出：
@@ -148,7 +148,7 @@ scripts/install-skill-from-github.py --repo oil-oil/modern-ui-ux-review --path .
 ### 模板二：guide（先出规则再设计）
 
 ```text
-请使用 $modern-ui-ux-review 的 guide 模式。
+请使用 $oiloil-ui-ux-guide 的 guide 模式。
 页面类型：B 端设置页。
 请输出简洁的“该做 / 不该做”规则，并覆盖：
 - 主任务与主操作层级
@@ -169,7 +169,7 @@ scripts/install-skill-from-github.py --repo oil-oil/modern-ui-ux-review --path .
 
 - `AGENTS.md`：跨工具共享指令（推荐作为单一真源）
 - `CLAUDE.md`：Claude Code 入口（桥接到共享指令）
-- `.cursor/rules/modern-ui-ux-review.mdc`：Cursor 规则入口（桥接到共享指令）
+- `.cursor/rules/oiloil-ui-ux-guide.mdc`：Cursor 规则入口（桥接到共享指令）
 - `SKILL.md`：Skill 主规则与工作流
 - `agents/openai.yaml`：Skill 展示信息与默认提示
 - `references/design-psych.md`：设计心理学诊断词汇

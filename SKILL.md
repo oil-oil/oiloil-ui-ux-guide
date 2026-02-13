@@ -1,9 +1,9 @@
 ---
-name: modern-ui-ux-review
+name: oiloil-ui-ux-guide
 description: Modern, clean UI/UX guidance + review skill. Use when you need actionable UX/UI recommendations, design principles, or a design review checklist for new features or existing systems (web/app). Focus on CRAP (Contrast/Repetition/Alignment/Proximity) plus task-first UX, information architecture, feedback & system status, consistency, affordances, error prevention/recovery, and cognitive load. Enforce a modern minimal style (clean, spacious, typography-led), reduce unnecessary copy, forbid emoji as icons, and recommend intuitive refined icons from a consistent icon set.
 ---
 
-# Modern UI/UX Review (Modern Minimal)
+# OilOil UI/UX Guide (Modern Minimal)
 
 Use this skill in two modes:
 
