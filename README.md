@@ -108,10 +108,12 @@ scripts/install-skill-from-github.py --repo oil-oil/oiloil-ui-ux-guide --path .
   AGENTS.md
   CLAUDE.md
   .cursor/rules/oiloil-ui-ux-guide.mdc
-  SKILL.md
   agents/openai.yaml
-  references/
   index.html
+  skills/
+    oiloil-ui-ux-guide/
+      SKILL.md
+      references/
 ```
 
 安装后重启 Codex，使新 Skill 生效。
@@ -170,13 +172,15 @@ scripts/install-skill-from-github.py --repo oil-oil/oiloil-ui-ux-guide --path .
 - `AGENTS.md`：跨工具共享指令（推荐作为单一真源）
 - `CLAUDE.md`：Claude Code 入口（桥接到共享指令）
 - `.cursor/rules/oiloil-ui-ux-guide.mdc`：Cursor 规则入口（桥接到共享指令）
-- `SKILL.md`：Skill 主规则与工作流
 - `agents/openai.yaml`：Skill 展示信息与默认提示
-- `references/design-psych.md`：设计心理学诊断词汇
-- `references/icons.md`：图标一致性与可理解性规则
-- `references/review-template.md`：标准评审输出模板
-- `references/checklists.md`：扩展检查清单
 - `index.html`：Skill 介绍与可视化示例页面
+- `skills/oiloil-ui-ux-guide/SKILL.md`：Skill 主规则与工作流
+- `skills/oiloil-ui-ux-guide/references/system-principles.md`：系统级指导原则
+- `skills/oiloil-ui-ux-guide/references/interaction-psychology.md`：交互心理学（HCI 定律、认知偏差、交互节奏、注意力经济）
+- `skills/oiloil-ui-ux-guide/references/design-psych.md`：设计心理学诊断词汇
+- `skills/oiloil-ui-ux-guide/references/icons.md`：图标一致性与可理解性规则
+- `skills/oiloil-ui-ux-guide/references/review-template.md`：标准评审输出模板
+- `skills/oiloil-ui-ux-guide/references/checklists.md`：扩展检查清单
 
 ## 参考文档
 

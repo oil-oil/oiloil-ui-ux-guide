@@ -5,7 +5,7 @@ This repository uses `AGENTS.md` as the shared instruction entry for multi-agent
 ## Scope
 
 - Applies to the whole repository.
-- Used when maintaining `SKILL.md`, `README.md`, `index.html`, and reference files.
+- Used when maintaining `skills/oiloil-ui-ux-guide/SKILL.md`, `README.md`, `index.html`, and reference files.
 
 ## Repository goals
 
@@ -32,5 +32,5 @@ This repository uses `AGENTS.md` as the shared instruction entry for multi-agent
 ## Editing rules
 
 - Keep updates small and coherent; avoid broad rewrites without clear value.
-- When changing `SKILL.md`, make sure `README.md` and `index.html` stay aligned.
+- When changing `skills/oiloil-ui-ux-guide/SKILL.md`, make sure `README.md` and `index.html` stay aligned.
 - If adding a new rule, include one concrete example or acceptance check.
