@@ -120,6 +120,15 @@ Use this when implementing or reviewing layouts. Keep it short, but enforce it s
 - Prefer consistency over variety: same component type uses the same motion pattern.
 - Avoid layout jumps. Use placeholders/skeletons to keep layout stable while loading.
 
+## Anti-AI Self-Check (run after generating UI)
+
+Before finalizing any generated UI, verify these items. Violating any one is a mandatory fix.
+
+- **Gradient restraint** — Gradients must convey meaning (progress, depth, state distinction). Purely decorative gradients: at most one per page. If background, buttons, and borders all use gradients simultaneously, that is overuse — pick one and flatten the rest.
+- **No emoji as UI** — Already a non-negotiable. Re-check: no emoji slipped in as section icons, status indicators, or button labels.
+- **Copy necessity** — For every piece of text, ask: if I remove this, can the user still understand through layout, icons, and position alone? If yes, remove it. Text is the last resort, not the default.
+- **Decoration justification** — Every purely visual effect (blur, glow, animated entrance, layered shadows) must answer: "what does this help the user understand?" No answer → remove.
+
 ## References
 - System-level guiding principles (concept constancy, copy discipline, state perceptibility, etc.): `references/system-principles.md`
 - Interaction psychology (Fitts/Hick/Miller, cognitive biases, flow, attention): `references/interaction-psychology.md`
